@@ -11,8 +11,6 @@
 
 <h1>Site vitrine Jeelwork</h1>
 
-<br><br>
-
 ![Next.js](https://img.shields.io/badge/Next.js-15-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 
