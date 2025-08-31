@@ -38,9 +38,7 @@ Ce site web sert de point d'entrée public de l'écosystème Jeelwork.
 ![Aperçu du site Jeelwork](public/images/websitePreview.avif)
 
 
-
-<br><br>
-
+<br>
 
 
 ## 🚀 Démarrer
@@ -222,8 +220,6 @@ Pour contribuer au projet :
 
 <h1>Jeelwork Showcase Website</h1>
 
-<br><br>
-
 ![Next.js](https://img.shields.io/badge/Next.js-15-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 
@@ -252,7 +248,7 @@ This website serves as the public-facing entry point of the Jeelwork ecosystem.
 
 
 
-<br><br>
+<br>
 
 
 
