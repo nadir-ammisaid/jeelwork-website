@@ -28,7 +28,6 @@ Ce site web sert de point d'entrée public de l'écosystème Jeelwork.
 
 <br>
 
-
 **🔗 Démo en direct :** [https://www.jeelwork.com](https://www.jeelwork.com)
 
 <br>
@@ -37,9 +36,7 @@ Ce site web sert de point d'entrée public de l'écosystème Jeelwork.
 
 ![Aperçu du site Jeelwork](public/images/websitePreview.avif)
 
-
 <br>
-
 
 ## 🚀 Démarrer
 
@@ -237,7 +234,6 @@ This website serves as the public-facing entry point of the Jeelwork ecosystem.
 
 <br>
 
-
 **🔗 Live Demo:** [https://www.jeelwork.com](https://www.jeelwork.com)
 
 <br>
@@ -247,9 +243,7 @@ This website serves as the public-facing entry point of the Jeelwork ecosystem.
 ![Jeelwork Website Preview](public/images/websitePreview.avif)
 
 
-
 <br>
-
 
 
 ## 🚀 Getting Started
