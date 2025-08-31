@@ -187,11 +187,11 @@ JEELWORK-website
 
 Projet personnel développé en autonomie par [**Nadir AMMI SAID**](https://www.linkedin.com/in/nadir-ammisaid/), pour approfondir mes compétences en développement Next.js et TypeScript.
 <br/>
-🔗 Découvrez le projet en ligne : [www.jeelwork.com](https://www.jeelwork.com)
+🔗 Découvrez le projet en ligne : **[www.jeelwork.com](https://www.jeelwork.com)**
 
 **💬 Vos avis m'intéressent - n'hésitez pas à me faire part de vos retours ou suggestions !**
 <br/>
-📩 Vous pouvez me contacter directement sur LinkedIn : [https://www.linkedin.com/in/nadir-ammisaid/](https://www.linkedin.com/in/nadir-ammisaid/)
+📩 Vous pouvez me contacter directement sur LinkedIn : **[https://www.linkedin.com/in/nadir-ammisaid/](https://www.linkedin.com/in/nadir-ammisaid/)**
 
 
 ## Contribution
@@ -395,11 +395,11 @@ JEELWORK-website
 
 Personal project independently developed by [**Nadir AMMI SAID**](https://www.linkedin.com/in/nadir-ammisaid/) to deepen my Next.js and TypeScript development skills.
 <br/>
-🔗 Discover the project online: [www.jeelwork.com](https://www.jeelwork.com)
+🔗 Discover the project online: **[www.jeelwork.com](https://www.jeelwork.com)**
 
 **💬 Your feedback matters - don't hesitate to share your thoughts or suggestions!**
 <br/>
-📩 You can contact me directly on LinkedIn: [https://www.linkedin.com/in/nadir-ammisaid/](https://www.linkedin.com/in/nadir-ammisaid/)
+📩 You can contact me directly on LinkedIn: **[https://www.linkedin.com/in/nadir-ammisaid/](https://www.linkedin.com/in/nadir-ammisaid/)**
 
 
 ## Contribution
