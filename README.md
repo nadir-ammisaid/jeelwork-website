@@ -1,6 +1,221 @@
-# 🛠️ Jeelwork Showcase Website
+<a href="#fr">
+  <img src="https://flagcdn.com/w40/fr.png" width="20" alt="Français"> Français
+</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#en">
+  <img src="https://flagcdn.com/w40/gb.png" width="20" alt="English"> English
+</a>
 
-<br><br>
+<hr style="margin-top: 4px; margin-bottom: 12px; border: none; border-top: 1px solid #ccc;" />
+
+<img id="fr" src="https://flagcdn.com/w40/fr.png" width="20" alt="Français"> Français
+
+<h1>Site vitrine Jeelwork</h1>
+
+![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+
+Site web officiel de présentation de **Jeelwork Algeria**, une plateforme qui met en relation les utilisateurs avec des prestataires de services locaux qualifiés dans les 58 wilayas (villes).
+
+Construit avec **Next.js 15** et **App Router** et **TypeScript**, le projet est optimisé pour :
+- ⚡ SEO et performances (export statique, images responsives, lazy loading)
+- 📱 Design responsive mobile-first
+- ♿ Meilleures pratiques d'accessibilité
+<!--
+- 🌍 Préparation multi-langues
+-->
+
+Ce site web sert de point d'entrée public de l'écosystème Jeelwork.
+
+<br>
+
+**🔗 Démo en direct :** [https://www.jeelwork.com](https://www.jeelwork.com)
+
+<br>
+
+## 🖼️ Aperçu
+
+![Aperçu du site Jeelwork](public/images/websitePreview.avif)
+
+<br>
+
+## 🚀 Démarrer
+
+### Prérequis
+
+Assurez-vous d'avoir installé :
+
+- [Node.js](https://nodejs.org/) (v18+ recommandé)
+- [npm](https://www.npmjs.com/) ou [pnpm](https://pnpm.io/) ou [yarn](https://yarnpkg.com/)
+- Git avec accès SSH configuré si clonage via SSH
+
+### Installation
+
+Cloner le dépôt et installer les dépendances :
+
+```bash
+# SSH (recommandé)
+git clone git@github.com:nadir-ammisaid/jeelwork-website.git
+
+# ou HTTPS
+git clone https://github.com/nadir-ammisaid/jeelwork-website.git
+```
+
+```bash
+cd jeelwork-website
+```
+
+```bash
+npm install
+```
+
+### Serveur de développement
+Pour lancer le serveur de développement localement : 
+
+```bash
+npm run dev
+```
+
+Visitez http://localhost:3000 dans votre navigateur.
+
+
+### Scripts disponibles
+
+```bash
+npm run dev          # Serveur de développement
+npm run build        # Build de production  
+npm run start        # Démarrer le serveur de production
+npm run lint         # Lancer ESLint
+npm run export       # Export statique (si configuré)
+```
+
+<br>
+
+
+
+## 🧱 Structure du projet
+
+Ce projet utilise **Next.js App Router** avec la structure suivante :
+
+```
+JEELWORK-website
+├── .next/                               # Sortie de build Next.js (généré)
+├── node_modules/                        # Dépendances npm (généré)
+├── public/                              # Assets statiques (servis à la racine)
+│   ├── icons/
+│   ├── images/
+│   ├── manifest.json                    # Manifest PWA
+│   ├── robots.txt                       # Fichier robots SEO
+│   └── sitemap.xml                      # Sitemap SEO
+├── src/
+│   ├── app/                             # App Router (Next.js 15)
+│   │   ├── (legal)/                     # Pages légales statiques
+│   │   │   ├── privacy-policy/
+│   │   │   │   ├── page.tsx             # Page Politique de confidentialité
+│   │   │   │   └── privacy-policy.css   
+│   │   │   └── terms-of-use/
+│   │   │       ├── page.tsx             # Page Conditions d'utilisation
+│   │   │       └── terms-of-use.css     
+│   │   ├── (marketing)/services/        # Pages marketing
+│   │   │   ├── [slug]/                  # Route dynamique pour un service unique
+│   │   │   │   └── page.tsx             # Page détail du service
+│   │   │   ├── layout.tsx               
+│   │   │   └── page.tsx                 # Index /services (liste des services)
+│   │   ├── api/                         # Routes API
+│   │   │   └── route.ts                 
+│   │   ├── apple-icon.png               
+│   │   ├── criticalStyles.css.ts        # CSS critique (inline comme string)
+│   │   ├── criticalStyles.tsx           # Composant d'injection CSS critique
+│   │   ├── favicon.ico                  
+│   │   ├── globals.css                  # Styles globaux (CSS non-critique)
+│   │   ├── icon.png                     
+│   │   ├── layout.tsx                   # Layout racine (metadata & <head/>)
+│   │   └── page.tsx                     # Page d'accueil
+│   ├── components/                      # Sections UI réutilisables
+│   │   ├── AreasServedSection.tsx
+│   │   ├── CTASection.tsx
+│   │   ├── DownloadSection.tsx
+│   │   ├── FAQSection.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── HowItWorksSection.tsx
+│   │   ├── RecentJobbersSection.tsx
+│   │   ├── ServicesSection.tsx
+│   │   └── TestimonialsSection.tsx
+│   ├── data/
+│   │   └── services.ts                  # Catalogue de services (contenu statique)
+│   └── lib/
+│       └── jobbers.ts                   # Données des prestataires (ISR / mocks)
+├── .eslintrc.json                       
+├── .gitignore                           
+├── env.d.ts                             
+├── middleware.ts                        # Middleware pour les requêtes API et gestion Googlebot     
+├── next-env.d.ts                        
+├── next.config.ts                       # Configuration Next.js
+├── package-lock.json                    
+├── package.json                         
+├── README.md                            # Documentation du projet
+└── tsconfig.json                        
+```
+
+
+
+<br>
+
+
+
+## ✨ Fonctionnalités
+
+- ✅ Génération de site statique (SSG) pour un temps de chargement rapide
+- 🔒 Optimisation SEO et headers de sécurité dans next.config.ts `next.config.ts`
+- 📱 Design responsive mobile-first avec optimisation tablette et desktop
+- 🧑‍💻 Support d'accessibilité (rôles ARIA, navigation clavier)
+- ⚡ Polices et images optimisées (`next/image`, `sharp`, font-display swap)
+- 🧭 Navigation par ancres avec défilement fluide
+
+
+<!--
+- 🌓 Support du mode sombre (via prefers-color-scheme)
+- 🌍 Contenu entièrement traduit (routes français + anglais)
+-->
+
+
+<br>
+
+
+## Auteur
+
+Projet personnel développé en autonomie par [**Nadir AMMI SAID**](https://www.linkedin.com/in/nadir-ammisaid/), pour approfondir mes compétences en développement Next.js et TypeScript.
+<br/>
+🔗 Découvrez le projet en ligne : [www.jeelwork.com](https://www.jeelwork.com)
+
+**💬 Vos avis m'intéressent - n'hésitez pas à me faire part de vos retours ou suggestions !**
+<br/>
+📩 Vous pouvez me contacter directement sur LinkedIn : [https://www.linkedin.com/in/nadir-ammisaid/](https://www.linkedin.com/in/nadir-ammisaid/)
+
+
+## Contribution
+
+Pour contribuer au projet :
+1. **Fork** le dépôt
+2. **Clone** votre fork sur votre machine locale
+3. Créez une nouvelle branche pour votre fonctionnalité (`git switch -c feature/votre-fonctionnalite`)
+4. **Commit** vos modifications (`git commit -m 'Ajout de fonctionnalité'`)
+5. **Push** vers votre branche (`git push origin feature/votre-fonctionnalite`)
+6. Créez une **Pull Request** sur le dépôt principal
+
+**Bonnes pratiques** :
+- Exécutez `npm run check` avant de pousser vos modifications
+- Ajoutez des tests pour toute nouvelle fonctionnalité
+- Suivez les principes SOLID pour une architecture de code propre et maintenable
+
+<br/>
+<hr id="en" style="margin-top: 4px; margin-bottom: 12px; border: none; border-top: 1px solid #ccc;" />
+<br/>
+
+<img src="https://flagcdn.com/w40/gb.png" width="20" alt="English"> English
+
+<h1>Jeelwork Showcase Website</h1>
 
 ![Next.js](https://img.shields.io/badge/Next.js-15-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
@@ -19,7 +234,6 @@ This website serves as the public-facing entry point of the Jeelwork ecosystem.
 
 <br>
 
-
 **🔗 Live Demo:** [https://www.jeelwork.com](https://www.jeelwork.com)
 
 <br>
@@ -29,9 +243,7 @@ This website serves as the public-facing entry point of the Jeelwork ecosystem.
 ![Jeelwork Website Preview](public/images/websitePreview.avif)
 
 
-
-<br><br>
-
+<br>
 
 
 ## 🚀 Getting Started
@@ -49,7 +261,7 @@ Make sure you have the following installed:
 Clone the repository and install dependencies:
 
 ```bash
-# SSH (recommanded)
+# SSH (recommended)
 git clone git@github.com:nadir-ammisaid/jeelwork-website.git
 
 # or HTTPS
@@ -84,7 +296,7 @@ npm run lint         # Run ESLint
 npm run export       # Static export (if configured)
 ```
 
-<br><br> 
+<br>
 
 
 
@@ -156,7 +368,7 @@ JEELWORK-website
 
 
 
-<br><br>
+<br>
 
 
 
@@ -176,24 +388,37 @@ JEELWORK-website
 -->
 
 
-<br><br>
+<br>
 
 
-## 📬 Feedback & Support
+## Author
 
-I'd love to hear from you! If you find this project useful or have suggestions for improvement:
+Personal project independently developed by [**Nadir AMMI SAID**](https://www.linkedin.com/in/nadir-ammisaid/) to deepen my Next.js and TypeScript development skills.
+<br/>
+🔗 Discover the project online: [www.jeelwork.com](https://www.jeelwork.com)
 
-- ⭐ **Star this repository** if you like what I'm building
-- 🚩 **Report issues** or request features via GitHub Issues  
-- 💡 **Share your ideas** for new features or improvements
-- 📧 **Contact me** on [LinkedIn](https://www.linkedin.com/in/nadir-ammisaid/)
-
-Thanks in advance for taking the time to share your thoughts!
-
+**💬 Your feedback matters - don't hesitate to share your thoughts or suggestions!**
+<br/>
+📩 You can contact me directly on LinkedIn: [https://www.linkedin.com/in/nadir-ammisaid/](https://www.linkedin.com/in/nadir-ammisaid/)
 
 
+## Contribution
 
-<!-- Default Readme 
+To contribute to the project:
+1. **Fork** the repository
+2. **Clone** your fork to your local machine
+3. Create a new branch for your feature (`git switch -c feature/your-feature`)
+4. **Commit** your changes (`git commit -m 'Add feature'`)
+5. **Push** to your branch (`git push origin feature/your-feature`)
+6. Create a **Pull Request** on the main repository
+
+**Best practices**:
+- Run `npm run check` before pushing your changes
+- Add tests for any new feature
+- Follow SOLID principles for clean and maintainable code architecture
+
+
+<!-- Default Next.js README 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
