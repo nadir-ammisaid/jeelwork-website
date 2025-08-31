@@ -91,7 +91,7 @@ npm run lint         # Lancer ESLint
 npm run export       # Export statique (si configuré)
 ```
 
-<br><br> 
+<br>
 
 
 
@@ -163,7 +163,7 @@ JEELWORK-website
 
 
 
-<br><br>
+<br>
 
 
 
@@ -183,7 +183,7 @@ JEELWORK-website
 -->
 
 
-<br><br>
+<br>
 
 
 ## Auteur
@@ -302,7 +302,7 @@ npm run lint         # Run ESLint
 npm run export       # Static export (if configured)
 ```
 
-<br><br> 
+<br>
 
 
 
@@ -374,7 +374,7 @@ JEELWORK-website
 
 
 
-<br><br>
+<br>
 
 
 
@@ -394,7 +394,7 @@ JEELWORK-website
 -->
 
 
-<br><br>
+<br>
 
 
 ## Author
