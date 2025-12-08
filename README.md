@@ -11,24 +11,25 @@
 
 <h1>Site vitrine Jeelwork</h1>
 
-![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 
 Site web officiel de présentation de **Jeelwork Algeria**, une plateforme qui met en relation les utilisateurs avec des prestataires de services locaux qualifiés dans les 58 wilayas (villes).
 
-Construit avec **Next.js 15** et **App Router** et **TypeScript**, le projet est optimisé pour :
+Construit avec **Next.js 16** et **App Router** et **TypeScript**, le projet est optimisé pour :
+
 - ⚡ SEO et performances (export statique, images responsives, lazy loading)
 - 📱 Design responsive mobile-first
 - ♿ Meilleures pratiques d'accessibilité
 <!--
 - 🌍 Préparation multi-langues
--->
+  -->
 
 Ce site web sert de point d'entrée public de l'écosystème Jeelwork.
 
 <br>
 
-**🔗 Démo en direct :** [https://www.jeelwork.com](https://www.jeelwork.com)
+**🔗 Démo en direct :** [https://jeelwork.vercel.app](https://jeelwork.vercel.app)
 
 <br>
 
@@ -69,7 +70,8 @@ npm install
 ```
 
 ### Serveur de développement
-Pour lancer le serveur de développement localement : 
+
+Pour lancer le serveur de développement localement :
 
 ```bash
 npm run dev
@@ -77,20 +79,17 @@ npm run dev
 
 Visitez http://localhost:3000 dans votre navigateur.
 
-
 ### Scripts disponibles
 
 ```bash
 npm run dev          # Serveur de développement
-npm run build        # Build de production  
+npm run build        # Build de production
 npm run start        # Démarrer le serveur de production
 npm run lint         # Lancer ESLint
 npm run export       # Export statique (si configuré)
 ```
 
 <br>
-
-
 
 ## 🧱 Structure du projet
 
@@ -107,27 +106,27 @@ JEELWORK-website
 │   ├── robots.txt                       # Fichier robots SEO
 │   └── sitemap.xml                      # Sitemap SEO
 ├── src/
-│   ├── app/                             # App Router (Next.js 15)
+│   ├── app/                             # App Router (Next.js 16)
 │   │   ├── (legal)/                     # Pages légales statiques
 │   │   │   ├── privacy-policy/
 │   │   │   │   ├── page.tsx             # Page Politique de confidentialité
-│   │   │   │   └── privacy-policy.css   
+│   │   │   │   └── privacy-policy.css
 │   │   │   └── terms-of-use/
 │   │   │       ├── page.tsx             # Page Conditions d'utilisation
-│   │   │       └── terms-of-use.css     
+│   │   │       └── terms-of-use.css
 │   │   ├── (marketing)/services/        # Pages marketing
 │   │   │   ├── [slug]/                  # Route dynamique pour un service unique
 │   │   │   │   └── page.tsx             # Page détail du service
-│   │   │   ├── layout.tsx               
+│   │   │   ├── layout.tsx
 │   │   │   └── page.tsx                 # Index /services (liste des services)
 │   │   ├── api/                         # Routes API
-│   │   │   └── route.ts                 
-│   │   ├── apple-icon.png               
+│   │   │   └── route.ts
+│   │   ├── apple-icon.png
 │   │   ├── criticalStyles.css.ts        # CSS critique (inline comme string)
 │   │   ├── criticalStyles.tsx           # Composant d'injection CSS critique
-│   │   ├── favicon.ico                  
+│   │   ├── favicon.ico
 │   │   ├── globals.css                  # Styles globaux (CSS non-critique)
-│   │   ├── icon.png                     
+│   │   ├── icon.png
 │   │   ├── layout.tsx                   # Layout racine (metadata & <head/>)
 │   │   └── page.tsx                     # Page d'accueil
 │   ├── components/                      # Sections UI réutilisables
@@ -146,23 +145,19 @@ JEELWORK-website
 │   │   └── services.ts                  # Catalogue de services (contenu statique)
 │   └── lib/
 │       └── jobbers.ts                   # Données des prestataires (ISR / mocks)
-├── .eslintrc.json                       
-├── .gitignore                           
-├── env.d.ts                             
-├── middleware.ts                        # Middleware pour les requêtes API et gestion Googlebot     
-├── next-env.d.ts                        
+├── .eslintrc.json
+├── .gitignore
+├── env.d.ts
+├── middleware.ts                        # Middleware pour les requêtes API et gestion Googlebot
+├── next-env.d.ts
 ├── next.config.ts                       # Configuration Next.js
-├── package-lock.json                    
-├── package.json                         
+├── package-lock.json
+├── package.json
 ├── README.md                            # Documentation du projet
-└── tsconfig.json                        
+└── tsconfig.json
 ```
 
-
-
 <br>
-
-
 
 ## ✨ Fonctionnalités
 
@@ -173,30 +168,27 @@ JEELWORK-website
 - ⚡ Polices et images optimisées (`next/image`, `sharp`, font-display swap)
 - 🧭 Navigation par ancres avec défilement fluide
 
-
 <!--
 - 🌓 Support du mode sombre (via prefers-color-scheme)
 - 🌍 Contenu entièrement traduit (routes français + anglais)
 -->
 
-
 <br>
-
 
 ## Auteur
 
 Projet personnel développé en autonomie par [**Nadir AMMI SAID**](https://www.linkedin.com/in/nadir-ammisaid/), pour approfondir mes compétences en développement Next.js et TypeScript.
 <br/>
-🔗 Découvrez le projet en ligne : **[www.jeelwork.com](https://www.jeelwork.com)**
+🔗 Découvrez le projet en ligne : **[www.jeelwork.vercel.app](https://jeelwork.vercel.app)**
 
 **💬 Vos avis m'intéressent - n'hésitez pas à me faire part de vos retours ou suggestions !**
 <br/>
 📩 Vous pouvez me contacter directement sur LinkedIn : **[https://www.linkedin.com/in/nadir-ammisaid/](https://www.linkedin.com/in/nadir-ammisaid/)**
 
-
 ## Contribution
 
 Pour contribuer au projet :
+
 1. **Fork** le dépôt
 2. **Clone** votre fork sur votre machine locale
 3. Créez une nouvelle branche pour votre fonctionnalité (`git switch -c feature/votre-fonctionnalite`)
@@ -205,6 +197,7 @@ Pour contribuer au projet :
 6. Créez une **Pull Request** sur le dépôt principal
 
 **Bonnes pratiques** :
+
 - Exécutez `npm run check` avant de pousser vos modifications
 - Ajoutez des tests pour toute nouvelle fonctionnalité
 - Suivez les principes SOLID pour une architecture de code propre et maintenable
@@ -217,24 +210,25 @@ Pour contribuer au projet :
 
 <h1>Jeelwork Showcase Website</h1>
 
-![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 
 Official showcase website for **Jeelwork Algeria**, a platform that connects users with skilled local jobbers and service providers across all 58 wilayas (cities).
 
-Built using **Next.js 15** with the **App Router** and **TypeScript**, the project is optimized for:
+Built using **Next.js 16** with the **App Router** and **TypeScript**, the project is optimized for:
+
 - ⚡ SEO and performance (static export, responsive images, lazy loading)
 - 📱 Mobile-first responsive design
 - ♿ Accessibility best practices
 <!--
 - 🌍 Multi-language readiness
--->
+  -->
 
 This website serves as the public-facing entry point of the Jeelwork ecosystem.
 
 <br>
 
-**🔗 Live Demo:** [https://www.jeelwork.com](https://www.jeelwork.com)
+**🔗 Live Demo:** [https://jeelwork.vercel.app](https://jeelwork.vercel.app)
 
 <br>
 
@@ -242,9 +236,7 @@ This website serves as the public-facing entry point of the Jeelwork ecosystem.
 
 ![Jeelwork Website Preview](public/images/websitePreview.avif)
 
-
 <br>
-
 
 ## 🚀 Getting Started
 
@@ -277,7 +269,8 @@ npm install
 ```
 
 ### Development server
-To run the dev server locally: 
+
+To run the dev server locally:
 
 ```bash
 npm run dev
@@ -285,20 +278,17 @@ npm run dev
 
 Visit http://localhost:3000 in your browser.
 
-
 ### Available Scripts
 
 ```bash
 npm run dev          # Development server
-npm run build        # Production build  
+npm run build        # Production build
 npm run start        # Start production server
 npm run lint         # Run ESLint
 npm run export       # Static export (if configured)
 ```
 
 <br>
-
-
 
 ## 🧱 Project Structure
 
@@ -315,27 +305,27 @@ JEELWORK-website
 │   ├── robots.txt                       # SEO robots file
 │   └── sitemap.xml                      # SEO sitemap
 ├── src/
-│   ├── app/                             # App Router (Next.js 15)
+│   ├── app/                             # App Router (Next.js 16)
 │   │   ├── (legal)/                     # Static legal pages
 │   │   │   ├── privacy-policy/
 │   │   │   │   ├── page.tsx             # Privacy Policy page
-│   │   │   │   └── privacy-policy.css   
+│   │   │   │   └── privacy-policy.css
 │   │   │   └── terms-of-use/
 │   │   │       ├── page.tsx             # Terms of Use page
-│   │   │       └── terms-of-use.css     
+│   │   │       └── terms-of-use.css
 │   │   ├── (marketing)/services/        # Marketing pages
 │   │   │   ├── [slug]/                  # Dynamic route for a single service
 │   │   │   │   └── page.tsx             # Service detail page
-│   │   │   ├── layout.tsx               
+│   │   │   ├── layout.tsx
 │   │   │   └── page.tsx                 # /services index (list of services)
 │   │   ├── api/                         # API routes
-│   │   │   └── route.ts                 
-│   │   ├── apple-icon.png               
+│   │   │   └── route.ts
+│   │   ├── apple-icon.png
 │   │   ├── criticalStyles.css.ts        # Critical CSS (inline as string)
 │   │   ├── criticalStyles.tsx           # Critical CSS injection component
-│   │   ├── favicon.ico                  
+│   │   ├── favicon.ico
 │   │   ├── globals.css                  # global styles (non-critical CSS)
-│   │   ├── icon.png                     
+│   │   ├── icon.png
 │   │   ├── layout.tsx                   # Root layout (metadata & <head/>)
 │   │   └── page.tsx                     # Homepage
 │   ├── components/                      # Reusable UI sections
@@ -354,23 +344,19 @@ JEELWORK-website
 │   │   └── services.ts                  # Services catalog (static content)
 │   └── lib/
 │       └── jobbers.ts                   # Jobbers data (ISR / mocks)
-├── .eslintrc.json                       
-├── .gitignore                           
-├── env.d.ts                             
-├── middleware.ts                        # Middleware for API requests & Googlebot handling     
-├── next-env.d.ts                        
+├── .eslintrc.json
+├── .gitignore
+├── env.d.ts
+├── middleware.ts                        # Middleware for API requests & Googlebot handling
+├── next-env.d.ts
 ├── next.config.ts                       # Next.js configuration
-├── package-lock.json                    
-├── package.json                         
+├── package-lock.json
+├── package.json
 ├── README.md                            # Project documentation
-└── tsconfig.json                        
+└── tsconfig.json
 ```
 
-
-
 <br>
-
-
 
 ## ✨ Features
 
@@ -381,30 +367,27 @@ JEELWORK-website
 - ⚡ Optimized fonts & images (`next/image`, `sharp`, font-display swap)
 - 🧭 Anchor navigation with smooth scrolling
 
-
 <!--
 - 🌓 Dark mode support (via prefers-color-scheme)
 - 🌍 Fully translated content (French + English routes)
 -->
 
-
 <br>
-
 
 ## Author
 
 Personal project independently developed by [**Nadir AMMI SAID**](https://www.linkedin.com/in/nadir-ammisaid/) to deepen my Next.js and TypeScript development skills.
 <br/>
-🔗 Discover the project online: **[www.jeelwork.com](https://www.jeelwork.com)**
+🔗 Discover the project online: **[www.jeelwork.vercel.app](https://jeelwork.vercel.app)**
 
 **💬 Your feedback matters - don't hesitate to share your thoughts or suggestions!**
 <br/>
 📩 You can contact me directly on LinkedIn: **[https://www.linkedin.com/in/nadir-ammisaid/](https://www.linkedin.com/in/nadir-ammisaid/)**
 
-
 ## Contribution
 
 To contribute to the project:
+
 1. **Fork** the repository
 2. **Clone** your fork to your local machine
 3. Create a new branch for your feature (`git switch -c feature/your-feature`)
@@ -413,12 +396,12 @@ To contribute to the project:
 6. Create a **Pull Request** on the main repository
 
 **Best practices**:
+
 - Run `npm run check` before pushing your changes
 - Add tests for any new feature
 - Follow SOLID principles for clean and maintainable code architecture
 
-
-<!-- Default Next.js README 
+<!-- Default Next.js README
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
